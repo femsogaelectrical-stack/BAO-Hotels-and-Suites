@@ -1,0 +1,6 @@
+{
+  "name": "BAO Hotels and Suites",
+  "description": "A premium room booking and guest portal for BAO Hotels and Suites in Ishara, Ogun State.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
