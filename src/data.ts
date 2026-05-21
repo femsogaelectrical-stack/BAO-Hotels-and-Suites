@@ -1,18 +1,5 @@
 import { Room, Review, GalleryItem } from './types';
 
-// @ts-ignore
-import standardRoomImg from './assets/images/standard_room_1779356881095.png';
-// @ts-ignore
-import deluxeSuiteImg from './assets/images/deluxe_suite_1779356898476.png';
-// @ts-ignore
-import executiveSuiteImg from './assets/images/executive_suite_1779356918000.png';
-// @ts-ignore
-import presidentialSuiteImg from './assets/images/presidential_suite_1779356940229.png';
-// @ts-ignore
-import hotelLobbyImg from './assets/images/hotel_lobby_1779356860605.png';
-// @ts-ignore
-import unnamedImg from './assets/images/unnamed.jpg';
-
 export const HOTEL_DETAILS = {
   name: "BAO Hotels and Suites",
   rating: 3.8,
@@ -52,7 +39,7 @@ export const ROOMS: Room[] = [
       "24/7 Power",
       "En-suite Bathroom"
     ],
-    image: standardRoomImg,
+    image: "/images/standard_room_1779356881095.png",
     maxGuests: 1,
     sizeSqM: 24,
     featured: true
@@ -70,7 +57,7 @@ export const ROOMS: Room[] = [
       "High-speed Wi-Fi",
       "Complimentary Breakfast"
     ],
-    image: deluxeSuiteImg,
+    image: "/images/deluxe_suite_1779356898476.png",
     maxGuests: 2,
     sizeSqM: 36,
     featured: true
@@ -89,7 +76,7 @@ export const ROOMS: Room[] = [
       "24/7 Room Service",
       "Complimentary Breakfast"
     ],
-    image: executiveSuiteImg,
+    image: "/images/executive_suite_1779356918000.png",
     maxGuests: 2,
     sizeSqM: 52
   },
@@ -106,7 +93,7 @@ export const ROOMS: Room[] = [
       "Access to Executive Lounge",
       "VIP Concierge Service"
     ],
-    image: presidentialSuiteImg,
+    image: "/images/presidential_suite_1779356940229.png",
     maxGuests: 4,
     sizeSqM: 110
   }
@@ -136,31 +123,31 @@ export const PRELOADED_REVIEWS: Review[] = [
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "gal-1",
-    url: hotelLobbyImg,
+    url: "/images/hotel_lobby_1779356860605.png",
     caption: "The elegant BAO lobby dressed with premium African furniture.",
     category: "lobby"
   },
   {
     id: "gal-2",
-    url: standardRoomImg,
+    url: "/images/standard_room_1779356881095.png",
     caption: "Standard Room: Cozy & practical desk layout.",
     category: "rooms"
   },
   {
     id: "gal-3",
-    url: deluxeSuiteImg,
+    url: "/images/deluxe_suite_1779356898476.png",
     caption: "Deluxe Suite: Super King bed and premium finishes.",
     category: "rooms"
   },
   {
     id: "gal-4",
-    url: executiveSuiteImg,
+    url: "/images/executive_suite_1779356918000.png",
     caption: "Executive Suite: Separate workspace and sofa lounge.",
     category: "rooms"
   },
   {
     id: "gal-5",
-    url: presidentialSuiteImg,
+    url: "/images/presidential_suite_1779356940229.png",
     caption: "Presidential Suite: Ultimate luxury layout.",
     category: "rooms"
   },
@@ -172,7 +159,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "gal-7",
-    url: unnamedImg, 
+    url: "/images/unnamed.jpg", 
     caption: "Lush gardens and executive meeting lounge walkway",
     category: "amenities"
   }
