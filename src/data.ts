@@ -1,15 +1,23 @@
 import { Room, Review, GalleryItem } from './types';
 
+// 1. Import all your room images directly from your asset paths
+import standardRoomImg from './assets/images/standard_room_1779356881095.png';
+import deluxeSuiteImg from './assets/images/deluxe_suite_1779356898476.png';
+import executiveSuiteImg from './assets/images/executive_suite_1779356918000.png';
+import presidentialSuiteImg from './assets/images/presidential_suite_1779356940229.png';
+import hotelLobbyImg from './assets/images/hotel_lobby_1779356860605.png';
+import unnamedImg from './assets/images/unnamed.jpg';
+
 export const HOTEL_DETAILS = {
   name: "BAO Hotels and Suites",
   rating: 3.8,
   reviewCount: 17,
   address: "Barin Epega St, Ishara 121108, Ogun State, Nigeria",
-  phone: "+234 812 345 6789", // Realistic Nigerian phone number for contacting BAO Hotel
-  whatsapp: "2348123456789", // WhatsApp formatted number
+  phone: "+234 812 345 6789", 
+  whatsapp: "2348123456789", 
   email: "info@baohotels.com",
   coordinates: {
-    lat: 6.9942, // Approximate coordinates of Ishara, Ogun State
+    lat: 6.9942, 
     lng: 3.6895
   },
   description: "Nestled in the serene and historic town of Ishara, Ogun State, BAO Hotels and Suites is a beacon of comfort and Nigerian hospitality. Offering premium accommodations, exquisite service, and state-of-the-art facilities, we provide a relaxing haven for business travellers, executives, and families looking for premium comfort outside the bustle of Lagos.",
@@ -39,7 +47,7 @@ export const ROOMS: Room[] = [
       "24/7 Power",
       "En-suite Bathroom"
     ],
-    image: "/images/standard_room_1779356881095.png",
+    image: standardRoomImg,
     maxGuests: 1,
     sizeSqM: 24,
     featured: true
@@ -57,7 +65,7 @@ export const ROOMS: Room[] = [
       "High-speed Wi-Fi",
       "Complimentary Breakfast"
     ],
-    image: "/images/deluxe_suite_1779356898476.png",
+    image: deluxeSuiteImg,
     maxGuests: 2,
     sizeSqM: 36,
     featured: true
@@ -76,7 +84,7 @@ export const ROOMS: Room[] = [
       "24/7 Room Service",
       "Complimentary Breakfast"
     ],
-    image: "/images/executive_suite_1779356918000.png",
+    image: executiveSuiteImg,
     maxGuests: 2,
     sizeSqM: 52
   },
@@ -93,7 +101,7 @@ export const ROOMS: Room[] = [
       "Access to Executive Lounge",
       "VIP Concierge Service"
     ],
-    image: "/images/presidential_suite_1779356940229.png",
+    image: presidentialSuiteImg,
     maxGuests: 4,
     sizeSqM: 110
   }
@@ -117,64 +125,37 @@ export const PRELOADED_REVIEWS: Review[] = [
     date: "2026-04-28",
     roomType: "Deluxe Suite",
     likes: 5
-  },
-  {
-    id: "rev-3",
-    author: "Adebayo Ogunlesi",
-    rating: 3.5,
-    comment: "The environment is very tidy and the customer service is highly responsive. The room finishes are premium. Standard room was clean but quite cozy.",
-    date: "2026-05-14",
-    roomType: "Standard Room",
-    likes: 12
-  },
-  {
-    id: "rev-4",
-    author: "Fatima Yusuf",
-    rating: 5.0,
-    comment: "The Presidential Suite is absolutely phenomenal! Massive living area and master Jacuzzi bath was top-notch. Took excellent care of my guests. VIP concierge was indeed VIP level.",
-    date: "2026-05-18",
-    roomType: "Presidential Suite",
-    likes: 4
-  },
-  {
-    id: "rev-5",
-    author: "Chidi Nwachukwu",
-    rating: 3.0,
-    comment: "Decent setup and secure. Had a slight issue with DSTV configuration but the front desk sorted it out in 10 minutes. Good hospitality overall.",
-    date: "2026-05-02",
-    roomType: "Standard Room",
-    likes: 2
   }
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "gal-1",
-    url: "/images/hotel_lobby_1779356860605.png",
+    url: hotelLobbyImg,
     caption: "The elegant BAO lobby dressed with premium African furniture.",
     category: "lobby"
   },
   {
     id: "gal-2",
-    url: "/images/standard_room_1779356881095.png",
+    url: standardRoomImg,
     caption: "Standard Room: Cozy & practical desk layout.",
     category: "rooms"
   },
   {
     id: "gal-3",
-    url: "/images/deluxe_suite_1779356898476.png",
+    url: deluxeSuiteImg,
     caption: "Deluxe Suite: Super King bed and premium finishes.",
     category: "rooms"
   },
   {
     id: "gal-4",
-    url: "/images/executive_suite_1779356918000.png",
+    url: executiveSuiteImg,
     caption: "Executive Suite: Separate workspace and sofa lounge.",
     category: "rooms"
   },
   {
     id: "gal-5",
-    url: "/images/presidential_suite_1779356940229.png",
+    url: presidentialSuiteImg,
     caption: "Presidential Suite: Ultimate luxury layout.",
     category: "rooms"
   },
@@ -186,7 +167,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "gal-7",
-    url: "/images/unnamed.jpg", 
+    url: unnamedImg, 
     caption: "Lush gardens and executive meeting lounge walkway",
     category: "amenities"
   }
