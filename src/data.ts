@@ -1,11 +1,16 @@
 import { Room, Review, GalleryItem } from './types';
 
-// 1. Import all your room images directly from your asset paths
+// @ts-ignore
 import standardRoomImg from './assets/images/standard_room_1779356881095.png';
+// @ts-ignore
 import deluxeSuiteImg from './assets/images/deluxe_suite_1779356898476.png';
+// @ts-ignore
 import executiveSuiteImg from './assets/images/executive_suite_1779356918000.png';
+// @ts-ignore
 import presidentialSuiteImg from './assets/images/presidential_suite_1779356940229.png';
+// @ts-ignore
 import hotelLobbyImg from './assets/images/hotel_lobby_1779356860605.png';
+// @ts-ignore
 import unnamedImg from './assets/images/unnamed.jpg';
 
 export const HOTEL_DETAILS = {
