@@ -197,7 +197,7 @@ export default function App() {
             {/* Immersive Photo Preview Column Container */}
             <div className="lg:col-span-5 h-[260px] sm:h-[320px] rounded-none overflow-hidden relative group cursor-pointer border border-black/15">
               <img
-                src="/src/assets/images/hotel_lobby_1779356860605.png"
+                src="/images/hotel_lobby_.png"
                 alt="BAO lobby front"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700"
